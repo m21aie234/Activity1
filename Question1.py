@@ -85,9 +85,15 @@ for value in random_values:
     relu_value = relu(value)
     print(f"ReLU({value}) = {relu_value}")
 
+# print("\nLeaky ReLU Values:")
+# for value in random_values:
+#     leaky_relu_value = leaky_relu(value)
+#     print(f"Leaky ReLU({value}) = {leaky_relu_value}")
+    
+alpha = 0.01  # Correcting alpha value
 print("\nLeaky ReLU Values:")
 for value in random_values:
-    leaky_relu_value = leaky_relu(value)
+    leaky_relu_value = leaky_relu(value, alpha)
     print(f"Leaky ReLU({value}) = {leaky_relu_value}")
 
 print("\nTanh Values:")
